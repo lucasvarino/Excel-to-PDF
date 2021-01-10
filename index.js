@@ -9,7 +9,6 @@ async function main (){
     const dadosProcessados = Processor.Process(dados);
 
     const usuarios = new Table(dadosProcessados);
-    console.log(usuarios.rows);
 }
 
 main();
