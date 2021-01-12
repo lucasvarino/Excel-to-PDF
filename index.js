@@ -15,8 +15,8 @@ async function main (){
     const usuarios = new Table(dadosProcessados);
     const html = await HtmlParser.parse(usuarios);
 
-    escritor.Write("teste.html", html);
-    Pdf.WritePdf(Date.now() + ".pdf", html);
+    escritor.Write("youHTML.html", html);
+    Pdf.WritePdf("youPDF.pdf", html);
 }
 
 main();
